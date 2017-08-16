@@ -5,7 +5,13 @@
   "main": "VueObjectView.vue",
   "scripts": {},
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/ebuzek/vue-object-view"
+  },
+  "homepage": "https://github.com/ebuzek/vue-object-view",
+  "bugs": {
+    "url": "https://github.com/ebuzek/vue-object-view/issues",
+    "email": "emanuel.buzek@gmail.com"
   },
   "keywords": [
     "VueJs",
@@ -15,8 +21,12 @@
     "json",
     "viewer",
     "lazy",
-    "circular"
+    "circular",
+    "inspector"
   ],
-  "author": "emanuel.buzek@gmail.com",
+  "author": {
+    "name": "Emanuel Buzek",
+    "email": "emanuel.buzek@gmail.com"
+  },
   "license": "MIT"
 }
