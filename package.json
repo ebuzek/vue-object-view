@@ -1,0 +1,22 @@
+{
+  "name": "vue-object-view",
+  "version": "0.2.0",
+  "description": "Vue.js component for displaying JavaScript objects with circular references",
+  "main": "VueObjectView.vue",
+  "scripts": {},
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "VueJs",
+    "object",
+    "tree",
+    "view",
+    "json",
+    "viewer",
+    "lazy",
+    "circular"
+  ],
+  "author": "emanuel.buzek@gmail.com",
+  "license": "MIT"
+}
