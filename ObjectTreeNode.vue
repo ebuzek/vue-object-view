@@ -1,6 +1,6 @@
 <template>
 <objectTreeNodePrimitive v-if="primitive" v-model="value" :type="type" />
-<objectTreeNodeComplex v-else v-model="value" :type="type" :primary="primary" />
+<objectTreeNodeComplex v-else v-model="value" :type="type" :primary="primary" :nowrap="nowrap" :expandButtonText="expandButtonText" />
 </template>
 
 <script>
@@ -9,7 +9,18 @@ import objectTreeNodePrimitive from './ObjectTreeNodePrimitive.vue';
 
 export default {
   name: 'objectTreeNode',
-  props: [ 'value', 'primary' ],
+  props: {
+      value: ['String', 'Number', 'Array', 'Function', 'Boolean', 'Object'],
+      primary: Boolean,
+      expandButtonText: {
+          type: String,
+          default: '...'
+      },
+      nowrap: {
+          type: Boolean,
+          default: true
+      }
+  },
   computed: {
     type() {
         let _type = typeof(this.value);
