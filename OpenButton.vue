@@ -1,5 +1,5 @@
 <template>
-  <button v-html="html" @click="$emit('click')"></button>
+  <button v-html="html" @click="$emit('click')" class="vue-object-view-open"></button>
 </template>
 
 <script>

@@ -1,9 +1,9 @@
 <template>
-<span v-if="type === 'null'" class="object-tree-node-primitive object-tree-node-null">null</span>
-<span v-else-if="type === 'undefined'" class="object-tree-node-primitive object-tree-node-undefined">undefined</span>
-<span v-else-if="type === 'number'" class="object-tree-node-primitive object-tree-node-number">{{ value }}</span>
-<span v-else-if="type === 'string'" class="object-tree-node-primitive object-tree-node-string">"{{ value }}"</span>
-<span v-else-if="type === 'boolean'" class="object-tree-node-primitive object-tree-node-boolean">{{ value }}</span>
+<span v-if="type === 'null'" class="vue-object-view-primitive vue-object-view-null">null</span>
+<span v-else-if="type === 'undefined'" class="vue-object-view-primitive vue-object-view-undefined">undefined</span>
+<span v-else-if="type === 'number'" class="vue-object-view-primitive vue-object-view-number">{{ value }}</span>
+<span v-else-if="type === 'string'" class="vue-object-view-primitive vue-object-view-string">"{{ value }}"</span>
+<span v-else-if="type === 'boolean'" class="vue-object-view-primitive vue-object-view-boolean">{{ value }}</span>
 </template>
 
 <script>
@@ -13,8 +13,8 @@ export default {
 }
 </script>
 
-<style scoped>
-    .object-tree-node-null, .object-tree-node-undefined, .object-tree-node-boolean {
+<style>
+    .vue-object-view-null, .vue-object-view-undefined, .vue-object-viewnode-boolean {
         font-weight: bold;
     }
 </style>

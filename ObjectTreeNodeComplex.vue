@@ -1,10 +1,10 @@
 <template>
-<div :class="{ open: open, inline: !open, 'inline-nowrap': !open && nowrap }">
+<div :class="{ open: open, inline: !open, 'inline-nowrap': !open && nowrap, 'vue-object-view-complex': true }">
     <openButton v-if="primary && !open" @click="open = true" :html="'&#x25B6;'" style="float:left" />
     <openButton v-if="primary && open" @click="open = false" :html="'&#x25BC;'" style="float:left" />
     <div>
     <span v-html="charOpen" />
-            <button v-if="!open && !expanded" @click="expanded = true" v-html="expandButtonText"></button>
+            <button v-if="!open && !expanded" @click="expanded = true" v-html="expandButtonText" class="vue-object-view-expand"></button>
             <div v-if="open || expanded" v-for="(key, index) in items"><span v-text="key" class="key" />: <objectTreeNode v-model="value[key]" :primary="open" :nowrap="nowrap" :expandButtonText="expandButtonText" /><span v-if="!open && index < items.length - 1">,&nbsp;</span></div>
     <span v-html="charClose" /></div>
 </div>
@@ -63,9 +63,6 @@ export default {
 </script>
 
 <style scoped>
-    .object-tree-node-complex {
-        padding-left: 10px;
-    }
     div.open {
         display: block;
         overflow: hidden;
