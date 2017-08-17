@@ -15,8 +15,25 @@ The experience is very similar to inspecting JavaScript objects using the browse
 npm install --save vue-object-view
 ```
 
-Use it just like any other Vue.js component. The value to display is passed as `v-model`.
+Use it just like any other Vue.js component. The value to display is passed as `v-model` or `:value`:
 
 ```html
 <VueObjectView v-model="object" />
+<VueObjectView :value="anotherObject" />
 ```
+
+## Properties
+
+|  Property | Meaning  | Default  |
+|----|----|----|
+|  `nowrap` | Prevent word wrap (display the unexpanded value on a single line)  | **true**  |
+|  `expandButtonText` | Content of the expand button  | '...'  |
+
+## Styling
+If you wish to change the visual appearance of the component, set the following CSS classes in your application stylesheet: 
+
+`vue-object-view` - Main component element
+`vue-object-view-primitive` - Element wrapping primitive values
+`vue-object-view-complex` - Element wrapping Objects and Arrays
+`vue-object-view-open` - The open button (chevron left/down)
+`vue-object-view-expand` - The expand button (...)
