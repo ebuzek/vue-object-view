@@ -32,8 +32,8 @@ Use it just like any other Vue.js component. The value to display is passed as `
 ## Styling
 If you wish to change the visual appearance of the component, set the following CSS classes in your application stylesheet: 
 
-`vue-object-view` - Main component element
-`vue-object-view-primitive` - Element wrapping primitive values
-`vue-object-view-complex` - Element wrapping Objects and Arrays
-`vue-object-view-open` - The open button (chevron left/down)
-`vue-object-view-expand` - The expand button (...)
+- `vue-object-view` - Main component element
+- `vue-object-view-primitive` - Element wrapping primitive values
+- `vue-object-view-complex` - Element wrapping Objects and Arrays
+- `vue-object-view-open` - The open button (chevron left/down)
+- `vue-object-view-expand` - The expand button (...)
