@@ -5,7 +5,7 @@
     <div>
     <span v-html="charOpen" />
             <button v-if="!open && !expanded" @click="expanded = true" v-html="expandButtonText" class="vue-object-view-expand"></button>
-            <div v-if="open || expanded" v-for="(key, index) in items"><span v-text="key" class="key" />: <objectTreeNode v-model="value[key]" :primary="open" :nowrap="nowrap" :expandButtonText="expandButtonText" /><span v-if="!open && index < items.length - 1">,&nbsp;</span></div>
+            <div v-if="open || expanded" v-for="(key, index) in items"><span v-if="open || type=='object'" class="key">{{ key }}:&nbsp;</span><objectTreeNode v-model="value[key]" :primary="open" :nowrap="nowrap" :expandButtonText="expandButtonText" /><span v-if="!open && index < items.length - 1">,&nbsp;</span></div>
     <span v-html="charClose" /></div>
 </div>
 </template>
