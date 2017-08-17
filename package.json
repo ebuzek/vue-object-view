@@ -1,6 +1,6 @@
 {
   "name": "vue-object-view",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Vue.js component for displaying JavaScript objects with circular references",
   "main": "VueObjectView.vue",
   "scripts": {},
