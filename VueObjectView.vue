@@ -10,7 +10,7 @@ import objectTreeNode from './ObjectTreeNode.vue';
 export default {
   name: 'vueObjectView',
   props: {
-      value: ['String', 'Number', 'Array', 'Function', 'Boolean', 'Object'],
+      value: [String, Number, Array, Function, Boolean, Object],
       primary: Boolean,
       expandButtonText: {
           type: String,

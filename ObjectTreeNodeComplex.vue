@@ -25,7 +25,7 @@ export default {
     }
   },
   beforeCreate: function () {
-    this.$options.components.objectTreeNode = require('./ObjectTreeNode.vue')
+    this.$options.components.objectTreeNode = require('./ObjectTreeNode.vue').default
   },
   methods: {
     makeItems() {

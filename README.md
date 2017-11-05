@@ -35,5 +35,5 @@ If you wish to change the visual appearance of the component, set the following 
 - `vue-object-view` - Main component element
 - `vue-object-view-primitive` - Element wrapping primitive values
 - `vue-object-view-complex` - Element wrapping Objects and Arrays
-- `vue-object-view-open` - The open button (chevron left/down)
+- `vue-object-view-open` - The open button (chevron right/down)
 - `vue-object-view-expand` - The expand button (...)
